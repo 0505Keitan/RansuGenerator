@@ -29,16 +29,24 @@ v2.0.0
 <div align="center">
 1から26までの数字をランダムで表示するプログラムです。<br>
 <!--
-<input type="number" name="---" placeholder="ランダム表示する番号を設定" class="textBox" min="5" max="100" required><br>
---->
+<input type="number" name="-" placeholder="ランダム表示する番号を設定" class="textBox" min="5" max="100" required><br>
+-->
 </div>
 <h1>
 <div align="center">
+	<p id="randText"></p>
 <script type="text/javascript">
-var rand = Math.floor(Math.random() * 26) + 1; //乱数を発生
-document.write(rand);//値を表示
+
+
+function makeRand(){
+	var rand = Math.floor(Math.random() * 26) + 1; //乱数を発生
+	document.getElementById("randText").innerHTML(rand);
+}
+
+makeRand();
+
 </script>
-<input type="button" value="数を変える" onclick="location.reload(2)" />
+<input type="button" value="数を変える" onclick="makeRand()">
 </div>
 </h1>
 </body>
