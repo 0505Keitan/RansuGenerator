@@ -34,19 +34,20 @@ v2.0.0
 </div>
 <h1>
 <div align="center">
-	<p id="randText"></p>
+	<p id="randText">0</p>
 <script type="text/javascript">
 
 
 function makeRand(){
 	var rand = Math.floor(Math.random() * 26) + 1; //乱数を発生
-	document.getElementById("randText").innerHTML(rand);
+	document.getElementById("randText").textContent = rand;
+
 }
 
 makeRand();
 
 </script>
-<input type="button" value="数を変える" onclick="makeRand()">
+<input type="button" value="数を変える" onClick="makeRand()">
 </div>
 </h1>
 </body>
