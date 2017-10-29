@@ -40,16 +40,21 @@ v2.0.0
 <div align="center">
 1から26までの数字をランダムで表示するプログラムです。<br>
 <!--
-<input type="number" name="---" placeholder="ランダム表示する番号を設定" class="textBox" min="5" max="100" required><br>
+<input type="number" name="-" placeholder="ランダム表示する番号を設定" class="textBox" min="5" max="100" required><br>
 --->
 </div>
 <h1>
 <div align="center">
+<p id="randText">0</p>
 <script type="text/javascript">
+function makeRand(){
 var rand = Math.floor(Math.random() * 26) + 1; //乱数を発生
-document.write(rand);//値を表示
+document.getElementById("randText").textContent = rand;
+}
+
+makeRand();
 </script>
-<input type="button" value="数を変える" onclick="location.reload(2)" />
+<input type="button" value="数を変える" onClick="makeRand()" />
 </div>
 </h1>
 </body>
@@ -61,6 +66,8 @@ document.write(rand);//値を表示
 <li><a href="https://github.com/0505Keitan">Github</a></li>
 <div class="fb-share-button" data-href="http://strainclub.html.xdomain.jp/Ransu.html" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fstrainclub.html.xdomain.jp%2FRansu.html&amp;src=sdkpreparse">シェア</a></div>
 <br>
+        Supported by mjk0513
+        <br>
         <div class="copyright">Copyright &copy; 2017 0505Keitan All Rights Reserved.</div>
     </div><!-- /#footer -->
 </html>
