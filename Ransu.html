@@ -1,7 +1,7 @@
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-->
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-->
 <style type="text/css">
 /* --- ボックス --- */
 div.section {
@@ -30,93 +30,84 @@ overflow: auto;
 div.section div.textArea p {
 margin: 1em 10px; /* 段落のマージン（上下、左右） */
 }
-
-
 </style>
 <!-->
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104906538-6"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-104906538-6');
-</script>
-
-
-
-
-
-<title>乱数ジェネレーター</title>
-</head>
-<body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div align="center">
-<h1>乱数ジェネレーター</h1>
-v3.1
-</div>
-<br>
-<br>
-<br>
-<br>
-<div align="center">
-1から30までの数字をランダムで表示するプログラムです。<br>
-<!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104906538-6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-104906538-6');
+    </script>
+    <title>乱数ジェネレーター</title>
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) 
+          return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10';
+        fjs.parentNode.insertBefore(js, fjs);
+      }
+             (document, 'script', 'facebook-jssdk'));
+    </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div align="center">
+      <h1>乱数ジェネレーター</h1>
+      v3.1
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div align="center">
+      1から30までの数字をランダムで表示するプログラムです。<br>
+      <!--
 <input type="number" name="-" placeholder="ランダム表示する番号を設定" class="textBox" min="5" max="100" required><br>
 -->
-</div>
-<h1>
-<div align="center">
-<p id="randText">0</p>
-<script type="text/javascript">
-
-function makeRand(){
-var rand = Math.floor(Math.random() * 30) + 1; //乱数を発生
-document.getElementById("randText").textContent = rand;
-}
-
-makeRand();
-</script>
-<input type="button" value="数を変える" onClick="makeRand()" />
-</div>
-</h1>
-</body>
-    
-    <div id="footer">
+    </div>
+    <h1>
+      <div align="center">
+        <p id="randText">0</p>
+        <script type="text/javascript">
+          function makeRand(){
+            var rand = Math.floor(Math.random() * 30) + 1; //乱数を発生
+            document.getElementById("randText").textContent = rand;
+          }
+          makeRand();
+        </script>
+        <input type="button" value="数を変える" onClick="makeRand()" />
+      </div>
+    </h1>
+  </body>
+  <div id="footer">
     <div align="center">
-<li><a href="http://twitter.com/0505Keitan">Twitter</a></li>
-<li><a href="https://github.com/0505Keitan">Github</a></li>
-<div class="fb-share-button" data-href="http://strainclub.html.xdomain.jp/Ransu.html" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fstrainclub.html.xdomain.jp%2FRansu.html&amp;src=sdkpreparse">シェア</a></div>
-<br>
-<div class="section">
-<h3>更新情報</h3>
-<div class="textArea">
-<p>2018/5/11</p>
-<p>乱数上限を30に変更</p>
-<p>2018/1/17</p>
-<p><a href="http://strainclub.html.xdomain.jp/Ransu.html">こっち</a>から乱数ジェネレーターを移動</p>
-<p>2017/10/29</p>
-<p>v3.0.0を公開</p>
-</div>
-</div>
-<br>
-
-        Supported by mjk0513
-        <br>
-        <div class="copyright">Copyright &copy; 2017 0505Keitan All Rights Reserved.</div>
+      <li><a href="http://twitter.com/0505Keitan">Twitter</a></li>
+      <li><a href="https://github.com/0505Keitan">Github</a></li>
+      <div class="fb-share-button" data-href="http://strainclub.html.xdomain.jp/Ransu.html" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fstrainclub.html.xdomain.jp%2FRansu.html&amp;src=sdkpreparse">シェア</a></div>
+      <br>
+      <div class="section">
+        <h3>更新情報</h3>
+        <div class="textArea">
+          <p>2018/5/11</p>
+          <p>乱数上限を30に変更</p>
+          <p>2018/1/17</p>
+          <p><a href="http://strainclub.html.xdomain.jp/Ransu.html">こっち</a>から乱数ジェネレーターを移動</p>
+          <p>2017/10/29</p>
+          <p>v3.0.0を公開</p>
+        </div>
+      </div>
+      <br>
+      Supported by mjk0513
+      <br>
+      <div class="copyright">Copyright &copy; 2017 0505Keitan All Rights Reserved.</div>
     </div><!-- /#footer -->
 </html>
